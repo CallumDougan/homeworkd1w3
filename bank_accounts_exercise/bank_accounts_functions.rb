@@ -56,7 +56,7 @@ def print_owner_names()
 end
 
 def total_cash_in_bank()
-
+  ACCOUNTS.map{|x| x[:amount]}.reduce(:+)
 end
 
 def last_bank_account_holder()
@@ -64,7 +64,16 @@ def last_bank_account_holder()
 end
 
 def average_bank_account_value()
-
+  total_cash_in_bank / ACCOUNTS.length
 end
 
-def
+def total_cash_in_business()
+ acbiz = ACCOUNTS.select{|x| x[:type]}
+ return acbiz
+ 
+end
+
+def largest_account_in_bank()
+  values = ACCOUNTS.sort_by { |hsh| hsh[:amount] }
+  return values.pop[:holder_name]
+end

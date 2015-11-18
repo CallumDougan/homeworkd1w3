@@ -31,8 +31,14 @@ puts "average bank account value is #{average_account_value}"
 puts "\n"
 
 ###total cash in business accounts
+total_business_value = total_cash_in_business()
+puts "total cash in business accounts is #{total_business_value}"
+puts "\n"
 
 ###holder of largest bank account
+largest_account = largest_account_in_bank()
+puts "largest account holder is #{largest_account}"
+puts "\n"
 
 ###holder of largest personal account
 
