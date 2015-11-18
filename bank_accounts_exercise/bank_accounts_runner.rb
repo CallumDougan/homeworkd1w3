@@ -5,15 +5,15 @@ bank_accounts_count = number_of_bank_accounts()
 puts "number of accounts #{bank_accounts_count}"
 puts "\n"
 
-###first account owner
-# first_bank_owner = first_bank_account_holder()
-# puts "first bank account owner is #{first_bank_owner}"
-# puts "\n"
+#first account owner
+first_bank_owner = first_bank_account_holder()
+puts "first bank account owner is #{first_bank_owner}"
+puts "\n"
 
-###print to screen name of all bank account owners
-# puts "name of bank acccount owners"
-# print_owner_names()
-# puts "\n"
+#print to screen name of all bank account owners
+puts "name of bank account owners"
+print_owner_names()
+puts "\n"
 
 ###total cash in bank
 # total_cash = total_cash_in_bank()

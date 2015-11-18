@@ -45,7 +45,12 @@ def number_of_bank_accounts()
   ACCOUNTS.length
 end
 
-def first_bank_account_owner
-
+def first_bank_account_holder()
+  ACCOUNTS[0][:holder_name]
 end
 
+def print_owner_names()
+  for name in ACCOUNTS
+    puts name[:holder_name]
+  end
+end
