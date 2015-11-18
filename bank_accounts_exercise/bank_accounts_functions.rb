@@ -54,3 +54,17 @@ def print_owner_names()
     puts name[:holder_name]
   end
 end
+
+def total_cash_in_bank()
+
+end
+
+def last_bank_account_holder()
+  ACCOUNTS[-1][:holder_name]
+end
+
+def average_bank_account_value()
+
+end
+
+def
