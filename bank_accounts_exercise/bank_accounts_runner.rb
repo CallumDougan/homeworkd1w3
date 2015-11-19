@@ -17,7 +17,7 @@ puts "\n"
 
 ###total cash in bank
 total_cash = total_cash_in_bank()
-puts "total in bank #{total_cash}"
+puts "total in bank £#{total_cash}"
 puts "\n"
 
 ###last account owner
@@ -27,22 +27,22 @@ puts "\n"
 
 ###average bank account value
 average_account_value = average_bank_account_value()
-puts "average bank account value is #{average_account_value}"
+puts "average bank account value is £#{average_account_value}"
 puts "\n"
 
 ###total cash in business accounts
 total_business_value = total_cash_in_business()
-puts "total cash in business accounts is #{total_business_value}"
+puts "total cash in business accounts is £#{total_business_value}"
 puts "\n"
 
 ##holder of largest bank account
 largest_account = largest_account_in_bank()
-puts "largest account holder is #{largest_account}"
+puts "largest account holder is #{largest_account[:holder_name]} with £#{largest_account[:amount]}"
 puts "\n"
 
 ###holder of largest personal account
 largest_personal_account = largest_personal_account_in_bank()
-puts "largest personal account holder is #{largest_personal_account}"
+puts "largest personal account holder is #{largest_personal_account[:holder_name]} with £#{largest_personal_account[:amount]}"
 puts "\n"
 
 ###any other functionality you want to add.
