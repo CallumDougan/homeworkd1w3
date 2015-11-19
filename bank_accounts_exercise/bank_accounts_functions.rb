@@ -68,12 +68,21 @@ def average_bank_account_value()
 end
 
 def total_cash_in_business()
- acbiz = ACCOUNTS.select{|x| x[:type]}
- return acbiz
- 
+  total_cash = 0
+
+  for account in ACCOUNTS
+    if account.has_value?("business")
+      total_cash = total_cash + account[:amount]
+    end
+  end
+    return total_cash
 end
 
 def largest_account_in_bank()
-  values = ACCOUNTS.sort_by { |hsh| hsh[:amount] }
-  return values.pop[:holder_name]
+ACCOUNTS.select.max_by{|x| x[:amount]}
+end
+
+def largest_personal_account_in_bank()
+  ACCOUNTS.select{|x| x[:type] == "personal"}
+     .max_by{|x| x[:amount]}
 end
